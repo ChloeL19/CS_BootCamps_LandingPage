@@ -6,6 +6,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Chat from "@material-ui/icons/Chat";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Fingerprint from "@material-ui/icons/Fingerprint";
+import ImportantDevicesIcon from '@material-ui/icons/ImportantDevices';
+import DeveloperBoardIcon from '@material-ui/icons/DeveloperBoard';
+import DeveloperModeIcon from '@material-ui/icons/DeveloperMode';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -24,6 +27,7 @@ export default function ProductSection() {
           <h2 className={classes.title}>Classes</h2>
           <h5 className={classes.description}>
             We'll be offering 1-2 hour classes on the weekends over Zoom.
+            Here are some example topics.
           </h5>
         </GridItem>
       </GridContainer>
@@ -31,27 +35,27 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="Reinforcement Learning"
+              description="Walk away from this class with a reinforcement learning agent capable of solving OpenAI Gym environments."
+              icon={DeveloperBoardIcon}
               iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="Web App Development"
+              description="Build your own web app with Flask and Jinja."
+              icon={ImportantDevicesIcon}
               iconColor="success"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              title="Technical Interview Prep"
+              description="Gain the confidence and skills to ace the interview for the software job of your dreams."
+              icon={DeveloperModeIcon}
               iconColor="danger"
               vertical
             />
