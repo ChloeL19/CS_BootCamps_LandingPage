@@ -14,6 +14,8 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/work
 
 const useStyles = makeStyles(styles);
 
+// turn into the signup section --> button for signup, button for apply (both link to same form)
+
 export default function WorkSection() {
   const classes = useStyles();
   return (
